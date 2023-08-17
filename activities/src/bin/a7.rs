@@ -9,5 +9,19 @@
 // * The function must use the enum as a parameter
 // * Use a match expression to determine which color
 //   name to print
+enum Color {
+    White,
+    Orange,
+    Blue
+}
 
-fn main() {}
+
+fn main() {
+    let go = Color::White;
+    match go {
+        Color::White => println!("White"),
+        Color::Orange => println!("Orange"),
+        Color::Blue => println!("Blue")
+        
+    }
+}
