@@ -23,9 +23,9 @@ fn main() {
         number: Some(100),
     };
     match first_locker.number {
-        Some(_t) => println!(
+        Some(num) => println!(
             "{:?} owns this locker with locker number {:?}",
-            first_locker.name, first_locker.number
+            first_locker.name, num
         ),
         None => println!(
             "{:?} owns this locker with no locker number",
@@ -33,9 +33,9 @@ fn main() {
         ),
     }
     match second_locker.number {
-        Some(_t) => println!(
+        Some(num) => println!(
             "{:?} owns this locker with locker number {:?}",
-            second_locker.name, _t
+            second_locker.name, num
         ),
         None => println!(
             "{:?} owns this locker with no locker number",
